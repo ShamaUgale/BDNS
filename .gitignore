@@ -1,0 +1,14 @@
+/target
+/Screenshots
+/Screenshots/*
+/Screenshots/
+/test-output
+/test-output*
+/qs.log
+/qs.log.1
+/bin
+/.metdata
+/Reports
+/*.log
+/src/test/java/com/tests/Sample/Booking.java
+

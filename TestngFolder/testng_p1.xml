@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NPP Suite" parallel="methods" thread-count="1">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.saf.testng.MTestListener" />
+	</listeners>
+
+	<test name="NPPCore_RegressionTest">
+		<groups>
+			<run>
+				<include name="RegressionGroup"></include>
+			</run>
+		</groups>
+		<packages>
+			<package name="com.test.NPPCore.*">
+			</package>
+		</packages>
+
+	</test>
+
+</suite>
